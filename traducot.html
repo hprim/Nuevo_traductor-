@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <link rel="icon" type="image/png" href="Traductor de K'iche'.png">
+    <meta charset="UTF-8">
+    <title>Traductor de K'iche'</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="traducor.js"></script>
+    <script src="audio.js"></script>
+    <header>
+         <a href="index.html">Pagina principal</a>
+         <img src="Traductor de K'iche'.png" alt="150px" width="150px">
+        <a href="traducot.html">Traductor</a>
+    </header>
+    <nav>
+        <div class="container">
+    <h1>Traductor Español a K'iche'</h1>
+    <h4>Escribe todo con tildes.</h4>
+    <input type="text" id="input-word"  />
+    <br> <br>
+    <button onclick="traducir()">Traducir</button>
+  
+    <button onclick="reproducir()">Reproduce</button>
+    <br>
+    <p id="resultado"></p>
+    
+  </div>
+</nav>
+ <nav>
+    <div class="card">
+      <h2>Deja tu sugerencia/comentario</h2>
+      <form id="sugerencia-form">
+        <textarea name="message" placeholder="Escribe tu sugerencia aquí..." required></textarea><br>
+        <input type="email" name="user_email" placeholder="Tu correo (opcional)"><br>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="estado">Por favor, escribe algo antes de enviar.</p>
+    </div>
+  </nav>
+
+  <script src="mensaje.js"></script>
+ <body>
+<footer>
+    © 2025 Traductor K'iche' K'ux | Hani Velásquez | Todos los derechos reservados.
+  </footer>
+</html>

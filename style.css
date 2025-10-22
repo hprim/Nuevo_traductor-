@@ -1,0 +1,239 @@
+ body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background: #7a1f3d;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #f9f1ec, #ffffff);
+    }
+    h1{
+      color: #7a1f3d;
+      text-align: center;
+    }
+    .hero h1 {
+      color: #7a1f3d;
+      font-size: 2.2em;
+    }
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .section h2 {
+      text-align: center;
+      color: #7a1f3d;
+      margin-bottom: 20px;
+    }
+    .curiosidades {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+   
+
+   nav {
+     padding: 20px;
+     border-radius: 0 0 10px 10px; }
+
+         .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #6d2e46;
+    }
+
+    textarea {
+      width: 100%;
+      height: 120px;
+      border: 2px solid #ddd;
+      border-radius: 12px;
+      padding: 1rem;
+      font-size: 1rem;
+      outline: none;
+      resize: none;
+    }
+
+    textarea:focus {
+      border-color: #b56576;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    button {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      color: rgb(82, 40, 40);
+      transition: 0.3s ease;
+    }
+
+    .translate-btn {
+      background: #6d597a;
+    }
+    .translate-btn:hover {
+      background: #57405f;
+    }
+
+    .speak-btn {
+      background: #355070;
+    }
+    .speak-btn:hover {
+      background: #24394e;
+    }
+
+    .sugerencias {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    input, .sugerencias textarea {
+      width: 80%;
+      border: 2px solid #b39393;
+      border-radius: 12px;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .submit-btn {
+      margin-top: 1rem;
+      background: #b56576;
+      color: rgb(237, 188, 188);
+      border: none;
+      border-radius: 10px;
+      padding: 0.6rem 1.5rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background: #8b404f;
+    }
+
+ 
+
+    h1{
+      color: #6d2e46;
+      text-align: center;
+    }
+
+    nav
+    {
+      padding: 10px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    li{
+      color: #50162c;
+    }
+ 
+    header a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #f9f1ec, #ffffff);
+    }
+    .hero h1 {
+      color: #7a1f3d;
+      font-size: 2.2em;
+    }
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .section h2 {
+      text-align: center;
+      color: #7a1f3d;
+      margin-bottom: 20px;
+    }
+    .curiosidades {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #7a1f3d;
+      color: white;
+      text-align: right;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .lala{
+     display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+
+    }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    .card-title{
+      color: #923f5c;
+    }
+
+    .pepe{
+      color: #50162c;
+      text-align: center;
+    }
