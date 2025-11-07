@@ -7,41 +7,179 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="traducor.js"></script>
+    <script src="audio/traducor.js"></script>
     <script src="audio.js"></script>
     <header>
          <a href="index.html">Pagina principal</a>
          <img src="Traductor de K'iche'.png" alt="150px" width="150px">
         <a href="traducot.html">Traductor</a>
     </header>
-    <nav>
-        <div class="container">
-    <h1>Traductor Español a K'iche'</h1>
-    <h4>Escribe todo con tildes.</h4>
-    <input type="text" id="input-word"  />
-    <br> <br>
-    <button onclick="traducir()">Traducir</button>
-  
-    <button onclick="reproducir()">Reproduce</button>
-    <br>
-    <p id="resultado"></p>
-    
-  </div>
-</nav>
- <nav>
-    <div class="card">
-      <h2>Deja tu sugerencia/comentario</h2>
-      <form id="sugerencia-form">
-        <textarea name="message" placeholder="Escribe tu sugerencia aquí..." required></textarea><br>
-        <input type="email" name="user_email" placeholder="Tu correo (opcional)"><br>
-        <button type="submit">Enviar</button>
-      </form>
-      <p id="estado">Por favor, escribe algo antes de enviar.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr ; gap: 20px;">
+
+  <!-- 📘 Columna 1 -->
+  <nav>
+    <ul class="tres-columnas">
+      <li>Escuela</li>
+      <li>Maestro</li>
+      <li>Agua</li>
+      <li>Fuego</li>
+      <li>Día</li>
+      <li>Noche</li>
+      <li>Cuerpo</li>
+      <li>Bigote</li>
+      <li>Corazón</li>
+      <li>Boca</li>
+      <li>Sangre</li>
+      <li>Lengua</li>
+      <li>Garganta</li>
+      <li>Brazo</li>
+      <li>Oreja</li>
+      <li>Rodilla</li>
+      <li>Nariz</li>
+      <li>Piel</li>
+      <li>Cabello</li>
+      <li>Vientre</li>
+      <li>Labio</li>
+      <li>Pulmón</li>
+      <li>Pierna</li>
+      <li>Espalda</li>
+      <li>Lágrima</li>
+      <li>Mano</li>
+      <li>Pestaña</li>
+      <li>Codo</li>
+      <li>Cintura</li>
+      <li>Hombros</li>
+     <li>Párpados</li>
+     <li>Uña</li>
+     <li>Cabeza</li>
+     <li>Cuello</li>
+     <li>Pecho</li>
+     <li>Dedo de la mano</li>
+     <li>Dedo del pie</li>
+     <li>Dientes</li>
+     <li>Muletas</li>
+      <li>Monedero</li>
+      <li>Micrófono</li>
+      <li>Papá</li>
+      <li>Mamá</li>
+      <li>Abuela</li>
+      <li>Tío</li>
+      <li>Tía</li>
+      <li>Primo</li>
+      <li>Prima</li>
+      <li>Sobrino</li>
+      <li>Sobrina</li>
+      <li>Hermano</li>
+      <li>Abuelo</li>
+      <li>Madrina</li>
+      <li>Hijo</li>
+      <li>Hija</li>
+      <li>Yo</li>
+      <li>Tú</li>
+      <li>Usted</li>
+      <li>Él</li>
+      <li>Ella</li>
+      <li>Nosotros</li>
+      <li>Ustedes</li>
+      <li>Ellos</li>
+    </ul>
+  </nav>
+
+  <!-- 📘 Columna 2 -->
+  <nav>
+    <ul class="tres-columnas">
+     <li>Sala</li>
+     <li>Dormitorio</li>
+     <li>Patio</li>
+     <li>Jardín</li>
+     <li>Cocina</li>
+     <li>Garaje</li>
+     <li>Baño</li>
+     <li>Comedor</li>
+     <li>Cuarto</li>
+     <li>Gradas</li>
+     <li>Flores</li>
+     <li>Ventana</li>
+     <li>Puerta</li>
+     <li>Cortina</li>
+     <li>Regadera</li>
+     <li>Mesa</li>
+     <li>Cama</li>
+     <li>Lavamanos</li>
+     <li>Silla</li>
+     <li>Teléfono</li>
+     <li>Sanitario</li>
+     <li>Televisión</li>
+     <li>Tejado</li>
+     <li>Timbre</li>
+     <li>Chimenea</li>
+     <li>Sofá</li>
+     <li>Libreta</li>
+     <li>Impresora</li>
+     <li>Tinta de impresora</li>
+     <li>Compás</li>
+     <li>Tenedor</li>
+     <li>Témpera</li>
+     <li>Tostadora</li>
+     <li>Pantalla</li>
+     <li>Cañonera</li>
+     <li>Sercha</li>
+     <li>Shampoo</li>
+     <li>Yeso</li>
+     <li>0</li>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+    </ul>
+  </nav>
+
+  <nav>
+    <div class="container">
+      <h1>Traductor Español a K'iche'</h1>
+      <h4>Escribe todo con tildes.</h4>
+      <input type="text" id="input-word" />
+      <br><br>
+      <button onclick="traducir()">Traducir</button>
+      <button onclick="reproducir()">Reproducir</button>
+      <br>
+      <p id="resultado"></p>
     </div>
   </nav>
 
-  <script src="mensaje.js"></script>
- <body>
+</div>
+
+<div class="card">
+      <h2>Deja tu sugerencia/comentario</h2>
+      <form id="sugerencia-form">
+        <input type="text" name="title" placeholder="Título del mensaje" required><br>
+        <input type="text" name="name" placeholder="Tu nombre" required><br>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required><br>
+        <textarea name="message" placeholder="Escribe tu sugerencia aquí" required></textarea><br>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="estado">Por favor, completa todos los campos antes de enviar.</p>
+    </div>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="mensaje.js"></script>
+ <nav>
+   
 <footer>
     © 2025 Traductor K'iche' K'ux | Hani Velásquez | Todos los derechos reservados.
   </footer>

@@ -1,37 +1,37 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Inicializar EmailJS con tu clave pública
-  emailjs.init("gWO-QHs3JzIYOzqL2");
+  emailjs.init("4e_P7G-2erCGU7xXR");
 
-  // Capturar el formulario
   const form = document.getElementById("sugerencia-form");
   const estado = document.getElementById("estado");
 
-  // Escuchar el envío del formulario
   form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const mensaje = form.message.value.trim();
-    const correo = form.user_email.value.trim();
+    const data = {
+      title: form.title.value.trim(),
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      user_email: form.email.value.trim(),
+      message: form.message.value.trim(),
+      time: new Date().toLocaleString()
+    };
 
-    if (!mensaje) {
-      estado.textContent = "Por favor, escribe algo antes de enviar.";
+   
+    if (!data.name || !data.email || !data.message || !data.title) {
+      estado.textContent = "Por favor, completa todos los campos antes de enviar.";
       estado.style.color = "gray";
       return;
     }
 
-    // Enviar usando EmailJS
-    emailjs.send("service_inv4bnn", "template_fb1mz7m", {
-      message: mensaje,
-      user_email: correo
-    })
-    .then(() => {
-      estado.textContent = "✅ ¡Tu sugerencia fue enviada con éxito!";
-      estado.style.color = "green";
-      form.reset();
-    })
-    .catch((error) => {
-      estado.textContent = "❌ Error al enviar: " + error.text;
-      estado.style.color = "red";
-    });
+    
+    emailjs.send("service_invSFHK", "template_kigjp5m", data)
+      .then(() => {
+        estado.textContent = "Tu sugerencia fue enviada con éxito";
+        form.reset();
+      })
+      .catch((error) => {
+        estado.textContent = " Error al enviar: " + error.text;
+      });
   });
 });

@@ -1,11 +1,4 @@
 const diccionario = {
-  "tía" : "Ch'utinan", 
-  "primo(a)":"Ukab' achalaxik" ,
-  "sobrino(a)":"Ikaq'",
-  "padrino":"Yuwa'chinb'ej, tatyox" ,
-  "hola": "saqarik",
-  "adiós": "chʼabʼej",
-  "comida": "wa",
   "casa": "ja",
   "escuela": "nimajay",
   "maestro": "tijoxel",
@@ -13,10 +6,7 @@ const diccionario = {
   "fuego": "kʼaq",
   "día": "qʼij",
   "noche": "aqʼabʼ",
-  "mamá": "nan",
-  "papá": "Tat" ,
   "cuerpo":"B'aqil, Ch'akul",
-  "hueso":"B'aq",
   "bigote":"Ismachi'",
   "corazón":"Anima'",
   "boca":"Chi'aj",
@@ -24,7 +14,6 @@ const diccionario = {
   "lengua":"Aq'",
   "garaganta": "Qulaj",
   "brazo":"Talab', Teleb'",
-  "ojo":"B'oq'ochaj",
   "oreja":"Xikinaj",
   "rodilla":"Ch'ek",
   "nariz":"Tza'maj",
@@ -99,6 +88,20 @@ const diccionario = {
   "muletas":"Jekb'inb'äl",
   "monedero":"Pwaqb'äl",
   "micrófono":"Taqb'äl",
+  "papá":"Tat",
+  "mamá":"Nan",
+  "abuela":"Nimnan,mam",
+  "tío":"Ch'utitat",
+  "Tía":"Ch'utinan",
+  "primo":"Ukab'achalaxik",
+  "prima":"Ukab'achalaxik",
+  "sobrino":"Ikaq'",
+  "sobrina":"Ikaq'",
+  "hermano":"Achalal",
+  "Abuelo":"Tatanol, mam",
+  "madrina":"Na'chinb'el, yo'x nan",
+  "hijo":"K'ajol",
+  "hija":"Mia'l",
   "0":"Majun",
   "1":"Jun",
   "2":"Kab'",
@@ -121,15 +124,32 @@ const diccionario = {
   "19":"B'elejlajuj",
   "20":"Juk'al"
 };
+let ultimaPalabra = ""; // guardará la última palabra traducida
 
 function traducir() {
   const palabra = document.getElementById("input-word").value.toLowerCase().trim();
   const resultado = document.getElementById("resultado");
+  const btnAudio = document.getElementById("btnAudio");
 
-  if (palabra in diccionario) {
-    resultado.textContent = ` En Kiche' ${palabra} es: "${diccionario[palabra]}"`;
+  if (diccionario[palabra]) {
+    const traduccion = diccionario[palabra];
+    resultado.textContent = `En K'iche' "${palabra}" es: "${traduccion}"`;
+    ultimaPalabra = palabra; // guarda la palabra actual para el audio
+    btnAudio.disabled = false; // habilita el botón de reproducir
   } else {
-    resultado.textContent = " Palabra no encontrada en el diccionario. Asegúrese de que la palabra esté escrita correctamente.";
-    document.getElementById("texto").value = ""; 
+    resultado.textContent = "Palabra no encontrada. Verifique la ortografía.";
+    btnAudio.disabled = true;
+    ultimaPalabra = "";
+  }
+}
+
+// 🎧 Función separada para reproducir audio
+function reproducir() {
+  if (ultimaPalabra) {
+    const audio = new Audio(`audio/${diccionario[ultimaPalabra]}.mp3`);
+
+    audio.play();
+  } else {
+    alert("Primero traduce una palabra para reproducir su audio.");
   }
 }
